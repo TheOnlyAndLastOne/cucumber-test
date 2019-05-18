@@ -29,7 +29,7 @@ public class ProductTest {
 
     private void create() {
         System.out.println("create model success");
-//        throw new RuntimeException();
+        throw new RuntimeException();
     }
 
     @Given("create asset")

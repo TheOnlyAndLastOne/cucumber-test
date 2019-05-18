@@ -12,7 +12,7 @@ import org.junit.Assert;
 public class SendTest {
 
     private Boolean right = true;
-
+    
     @Given("create measurePoint")
     public void createPoint(){
         try {
