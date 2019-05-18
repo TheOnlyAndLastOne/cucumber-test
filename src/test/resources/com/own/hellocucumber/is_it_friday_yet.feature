@@ -25,7 +25,13 @@
 Feature: project test
   test test
 
-  Scenario: create product and upload data
-    Given create product
-    Then upload data
+  Scenario: create product (include create model and asset)
+    Given create model
+    Then create asset
     Then return true
+
+
+  Scenario: send measurePoint
+    Given create measurePoint
+    When get right response
+    Then get true

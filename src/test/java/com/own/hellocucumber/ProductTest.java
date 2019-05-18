@@ -17,8 +17,8 @@ public class ProductTest {
 
     private Boolean ifTrue = true;
 
-    @Given("create product")
-    public void createProduct(){
+    @Given("create model")
+    public void createModel(){
         try {
             create();
         } catch (Exception e) {
@@ -28,22 +28,22 @@ public class ProductTest {
     }
 
     private void create() {
-        System.out.println("create success");
+        System.out.println("create model success");
 //        throw new RuntimeException();
     }
 
-    @Given("upload data")
-    public void uploadData(){
+    @Given("create asset")
+    public void createAsset(){
         try {
-            upload();
+            createAssetNode();
         } catch (Exception e) {
             e.printStackTrace();
             ifTrue = false;
         }
     }
 
-    private void upload() {
-        System.out.println("upload success");
+    private void createAssetNode() {
+        System.out.println("upload asset success");
     }
 
     @Then("return true")
