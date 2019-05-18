@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
  * @author zhi.zhao
  * @date 5/15/2019 3:41 PM
  */
-@RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty","json:target/create_product-json-report.json","html:target/create_product-html-report.html"})
+//@RunWith(Cucumber.class)
+//@CucumberOptions(plugin = {"pretty","json:target/create_product-json-report.json","html:target/create_product-html-report.html"})
 public class ProductTest {
 
     private Boolean ifTrue = true;
